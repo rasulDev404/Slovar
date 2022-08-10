@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    android:elevation="15dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp">
+<TextView
+    android:id="@+id/title_word"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    tools:text="АВАНГАРД"
+    android:textSize="22sp"
+    android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/word_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/title_word"
+        app:layout_constraintTop_toBottomOf="@id/title_word"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        tools:text="АББРЕВИАТУРА, -ы, ж. В словообразовании: существительное,  образованное из усеченных отрезков слов (напр., исполком, комсомол), из таких же отрезков в сочетании  с целым словом (напр., роддом,  запчасти), а также из начальных звуков  слов или названий их  начальных  букв (напр., вуз,  АТС, МХАТ,  ЭВМ, СКВ), сложносокращенное слово. || прил. аббревиатурный, -ая,-ое. "
+        android:maxLines="3"
+        android:ellipsize="end"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
